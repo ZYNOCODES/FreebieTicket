@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/illustrations_ticket" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Popular"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp">
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/backgraound_gray"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="Phil Collins"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/backgraound_gray"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="TV on the Radio"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/backgraound_gray"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="FC Barcelona"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/backgraound_gray"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="Man City"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="No tickets bought"
+            android:textColor="@color/darkblue"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It appears you haven’t bought any tickets yet. Maybe try searching these?"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:textAlignment="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

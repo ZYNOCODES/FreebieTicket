@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin.AdminFragments.AddEventFragment.AddEventAdminFragment3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Event Added Successfully"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</FrameLayout>

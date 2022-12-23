@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Freebie Ticket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DBURL">https://freebie-ticket-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    <string name="google_maps_api_key">AIzaSyD8YohzNOZr8swkiPW0YFw5gfuZqnmGcIQ</string>
+</resources>
